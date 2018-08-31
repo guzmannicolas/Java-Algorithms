@@ -1,0 +1,56 @@
+/*
+Desarrollar una funcion tal que, partiendo de un vector de numero enteros positivos los
+ordene de forma descendente de acuerdo al siguiente criterio;
+1 Distancia al multiplo de 7 mas cercano
+2 Si dos numeros tienen la misma distancia al multiplo de 7 mas cercano ordenar en forma
+ascendente por su valor absoluto
+
+Ejemplo;
+       v= 44,37, 24, 50,14...87
+	
+    Numero Distancia
+    24		3
+    87		3
+    37		2
+    40		2
+	50		1
+    14		0
+*/	
+import java.util.Arrays;
+
+public class HelloWorld
+{
+  
+  public static void main(String[] args){
+    
+    int [] v1 = {44,37,24,50,14,87};
+    
+  Arrays.sort(v1);
+    
+   // for (int numero:v1)
+  //System.out.println(numero);
+   for(int j=0; j<v1.length; j++){
+    
+     
+   // for(int i=j+1; i<v1.length; i++){   
+     int aux = v1[j] % 7;
+     int [] v2 = {j};
+     
+     Arrays.sort(v2);
+     //int aux2 = v1[i] % 7;
+   //  int [] aux = {resultado};  
+      
+ //    double aux2 = v1[i] % 7;
+         
+    /*  if(aux>aux2){
+                    //Intercambiamos valores
+                    int aux3=aux;
+                    aux=aux2;
+                    aux2=aux3;
+     */
+   System.out.println(v2[0]);
+    // }
+    //}   
+   } 
+  }
+ }

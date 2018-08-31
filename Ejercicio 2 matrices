@@ -1,0 +1,32 @@
+//Desarrollar una funcion tal que, dado 3 vectores de numero enteros
+//retorne un vector el cual contendra el producto de todas la combinaciones
+//de 3 numeros diferentes,  ordenados en forma ascendente
+//Ejemplo: V1 = {2,5,7,11,57}
+//         V1 = {3,8,36}
+//	       V1 = {1,3,9,15,71}
+//	 R = (6, 15, 16... 145692) = (2*3*1, 5*3*1, 2*8*1... 57*36*71)
+public class HelloWorld
+{
+  
+  public static void main(String[] args){
+    
+    int [] v1 = {2,5,7,11,57};
+    int [] v2 = {3,8,36};
+    int [] v3 = {1,3,9,15,71};
+    
+  
+   for(int j=0; j<v1.length; j++){
+    for(int i=0; i<v2.length; i++){
+      for(int k=0; k<v3.length; k++){
+      int resultado;
+      
+        resultado = v1[j] * v2[i] * v3[k];
+        System.out.println(resultado);
+      
+	}
+     System.out.println("------------");
+   }                     
+   System.out.println("------------");
+  }
+ }
+}

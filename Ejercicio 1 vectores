@@ -1,0 +1,18 @@
+// Dados dos vectores A y B, de longitud i y j (i<=j), desarrollar una funcion que indica si los elementos de B estan contenidos en A
+
+public class HelloWorld
+{
+  
+  public static void main(String[] args){
+    
+    int [] v1 = {1,2,3,4,1,2,3,4};
+    int [] v2 = {1,2,4};
+    
+   for(int j=0; j<v2.length; j++){
+    for(int i=0; i<v1.length; i++){ 
+      if(v1[i] ==v2[j])
+        System.out.println("El vector B contiene el; "+v1[i]+" del vector A"); 
+  	}                    
+   }                     
+  }
+}
